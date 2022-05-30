@@ -21,8 +21,7 @@
             <clobbers target="plugins.launcher" />
     </js-module>
 
-
-    <config-file target="AndroidManifest.xml" parent="/manifest">
+    <config-file target="AndroidManifest.xml" parent="/*">
         <queries>
              <package android:name="ae.uaepass.mainapp.qa" />
              <package android:name="ae.uaepass.mainapp.stg" />
