@@ -21,14 +21,6 @@
             <clobbers target="plugins.launcher" />
     </js-module>
 
-    <config-file target="AndroidManifest.xml" parent="/*">
-        <queries>
-             <package android:name="ae.uaepass.mainapp.qa" />
-             <package android:name="ae.uaepass.mainapp.stg" />
-             <package android:name="ae.uaepass.mainapp" />
-        </queries>
-    </config-file>
-
     <!-- ios -->
     <platform name="ios">
             <config-file target="config.xml" parent="/*">
@@ -46,6 +38,13 @@
                 <feature name="Launcher">
                         <param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher" />
                 </feature>
+            </config-file>
+            <config-file target="AndroidManifest.xml" parent="/*">
+                <queries>
+                     <package android:name="ae.uaepass.mainapp.qa" />
+                     <package android:name="ae.uaepass.mainapp.stg" />
+                     <package android:name="ae.uaepass.mainapp" />
+                </queries>
             </config-file>
             <source-file src="src/android/Launcher.java" target-dir="src/com/hutchind/cordova/plugins/launcher" />
             <source-file src="src/android/ParseTypes.java" target-dir="src/com/hutchind/cordova/plugins/launcher" />
