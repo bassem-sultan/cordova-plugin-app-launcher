@@ -48,7 +48,6 @@
                      <package android:name="puraapp" />
                      <package android:name="ae.purehealth.pura" />
                      <package android:name="ae.purehealth.pura.qa.v2" />
-                     <!-- <package android:name="ae.purehealth.pura-ios-app" /> -->
                      <package android:name="ae.purehealth.pura2.qa" />
                 </queries>
             </config-file>
